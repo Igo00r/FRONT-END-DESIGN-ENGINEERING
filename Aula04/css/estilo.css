@@ -1,0 +1,76 @@
+
+body{
+    background-color: rgb(5, 2, 53);
+}
+h1{
+    color:black;
+    
+}
+p{
+    color:brown
+}
+p{
+    color:lawngreen
+}
+#disc{
+    list-style-type: disc;
+}
+#circle{
+    list-style-type: circle;
+}
+#square{
+    list-style-type: square;
+}
+#none{
+    list-style-type: none;
+}
+
+#decimal{
+    list-style-type: decimal;
+}
+
+#zero{
+    list-style-type: decimal-leading-zero;
+}
+
+#upperAlfa{
+    list-style-type: upper-alpha;
+}
+
+#lowerAlfa{
+    list-style-type: lower-alpha;
+}
+
+#grego{
+    list-style-type: lower-greek;
+}
+
+#menuV{
+    list-style-type: none;
+    background-color: red;
+    width: 150px; /* px Pixel - é a menor unidade que conseguimos dividir a tela */
+    height: 155px;
+    padding:0 ; /* padding - margens internas */
+}
+
+#menuV li{
+    height: 30px;
+    border-bottom: 1px solid #fff;
+    border-left: 5px solid yellow;
+}
+
+#menu li a{
+    text-decoration: none;
+    color: #fff;
+    margin-left: 20px; /* margin - margens EXternas */
+    padding-left: 20px;
+    display: block;
+    border-left: 5px solid greenyellow;
+    
+}
+
+#menuV li a:hover{ /*PSEUDO-SELETOR hover - Hand OVER - passar a mão em cima */
+    background-color: darkcyan;
+    border-left: 5px solid yellow;
+    color: black;
+}
