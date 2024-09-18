@@ -1,0 +1,106 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+#wrapper{
+    background-color: slateblue;
+    width: 100%;
+    height: 3000px;
+}
+
+#cabecalhoPrincipal{
+    background-color: rgba(26, 0, 43, 0.815);
+    width: 100%;
+    height: 164px;
+}
+
+#Perfil{
+    width: 100%;
+    height: 20px;
+    background-color: red;
+}
+
+.content{
+   /*width: calc(100% - 100px);*/
+   width: 2200px;
+}
+
+#linksPerfil{
+    text-align: right;
+}
+
+#linksPerfil a{
+    color: #fff;
+    text-decoration: none;
+}
+
+#logo{
+    margin-top: 10px;
+
+}
+
+#LogoGaviao{
+    width: 100px;
+}
+
+#menuPrincipal{
+    width: 100%;
+    height: 40px;
+    background-color: red;
+}
+
+#menuPrincipal ul{
+    float: right;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#menuPrincipal ul li{
+    float: left;
+    width: 100px;
+    height: 30px;
+    text-align: right;
+    font-size: 17px;
+}
+
+#menuPrincipal ul li a{
+    color: #fff;
+    text-decoration: none;
+    line-height: 30px;
+}
+
+main{
+    width: 100%;
+}
+
+#slider01{
+    width: 100%;
+    height: 600px;
+    margin-bottom: 20px;
+}
+.box{
+    width: 480px;
+    height: 480px;
+    float:left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border: 5px solid #000;
+   border-radius: 20px;
+    padding: 20px; 
+}
+.box img{
+    width: 448px;
+    height: 366px;
+    float:left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.box header{
+    font-size: 18px;
+    color: yellow;
+}
+
+.semMargem{
+    margin-right: 0;
+}
