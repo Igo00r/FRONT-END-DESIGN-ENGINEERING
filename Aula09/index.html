@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <form name="frmCadastro" id="frmCadastro" method="post">
+       <label for="txtNome">Nome*</label>
+        <input type="text" name="txtNome" id="txtNome" required placeholder="Digite seu nome">
+    <br>
+        <label>Sobenome*
+            <input type="text" name="txtSobrenome" id="txtSobrenome" placeholder="Digite seu sobrenome">
+        </label>
+    <br>
+    <br>
+        <label for="txtEmail">E-Mail:</label>
+            <input type="email" name="txtEmail" id="txtEmail" placeholder="Digite seu email">
+    <br>
+        <label for="txtSenha">Senha*
+            <input type="password" name="txtSenha" id="txtSenha" placeholder="Digite sua senha">
+        </label>
+    <br>
+        <label>Confirme a Senha*
+            <input type="password" name="txtConfSenha" id="txtConSenha" placeholder="Confirme sua senha">
+        </label>
+    <br>
+    <br>
+        <label>CPF*
+            <input type="text" name="txtCPF" id="txtCPF" placeholder="Digite seu CPF" maxlength="14">
+        </label>
+    <br>
+        <label>CEP:
+        <input type="CEP" name="txtCep" id="txtCep" placeholder="Digite seu CEP">
+        </label>    
+    <br>
+        <label>Dependentes:
+        <input type="number" name="txtDependentes" id="txtDependentes" placeholder="Dependentes" min="0" max="5">
+        </label>  
+    <br>
+    <br>
+    <br>
+        <label>Digite sua mensagem:
+        <textarea name="txtMensagem" id="txtMensagem" cols="50" rows="4" placeholder="Digite sua mensagem"></textarea>
+        </label>
+
+    <br>
+    <br>
+    <input type="submit">
+</form>
+    
+</body>
+</html>
