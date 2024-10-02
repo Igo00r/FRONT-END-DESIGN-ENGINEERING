@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <form name="frmCadastro" id="frmCadastro" method="post" enctype="multipart/form-data">
+       <label for="txtNome">Nome*</label>
+        <input type="text" name="txtNome" id="txtNome" required placeholder="Digite seu nome">
+    <br>
+        <label>Sobenome*
+            <input type="text" name="txtSobrenome" id="txtSobrenome" placeholder="Digite seu sobrenome">
+        </label>
+    <br>
+    <br>
+        <label for="txtEmail">E-Mail:</label>
+            <input type="email" name="txtEmail" id="txtEmail" placeholder="Digite seu email">
+    <br>
+        <label for="txtSenha">Senha*
+            <input type="password" name="txtSenha" id="txtSenha" placeholder="Digite sua senha">
+        </label>
+    <br>
+        <label>Confirme a Senha*
+            <input type="password" name="txtConfSenha" id="txtConSenha" placeholder="Confirme sua senha">
+        </label>
+    <br>
+    <br>
+        <label>CPF*
+            <input type="text" name="txtCPF" id="txtCPF" placeholder="Digite seu CPF" maxlength="14">
+        </label>
+    <br>
+        <label>CEP:
+        <input type="CEP" name="txtCep" id="txtCep" placeholder="Digite seu CEP">
+        </label>    
+    <br>
+        <label>Dependentes:
+        <input type="number" name="txtDependentes" id="txtDependentes" placeholder="Dependentes" min="0" max="5">
+        </label>  
+    <br>
+    <br>
+    <br>
+        <label>Digite sua mensagem:
+        <textarea name="txtMensagem" id="txtMensagem" cols="50" rows="4" placeholder="Digite sua mensagem"></textarea>
+        </label>
+    <br>
+    <br>
+        <label>Volume:</label>
+        <input type="range" name="volume" id="volume" min="0" max="100" value="10">
+    <br>
+    <br>
+        <label>Sexo:</label>
+        <input type="radio" name="sexo" id="sexoM" value="M">
+        <label for="sexoM" class="sexo1">Masculino</label>
+
+        <input type="radio" name="sexo" id="sexoF" value="F">
+        <label for="sexoF" class="sexo1">Feminino</label>
+        
+        <input type="radio" name="sexo" id="sexoO" value="O">
+        <label for="sexoO" class="sexo1">Outros</label>
+    <br>
+    <br>
+        <label>Interesse:</label>
+        <input type="checkbox" name="chkInteresseTI" id="chkInteresseTI" value="TI">
+        <label for="chkInteresseTI" class="interesse">TI</label>
+
+        <input type="checkbox" name="chkInteresseFut" id="chkInteresseFut" value="Fut">
+        <label for="chkInteresseFut">Futebol</label>
+
+        <input type="checkbox" name="chkInteresseCulin" id="chkInteresseCulin" value="Culin">
+        <label for="chkInteresseCulin" class="interesse">Culinária</label>
+
+        <input type="checkbox" name="chkInteresseHorosc" id="chkInteresseHorosc" value="Horosc">
+        <label for="chkInteresseHorosc" class="interesse">Horóscopo</label>
+    <br>
+    <br>
+        <label>Cor favorita:</label>
+        <input type="color" name="pckColor" id="pckColor">
+    <br>
+    <br>
+        <label>Estado:</label>
+        <select name="sltEstado" id="sltEstado">
+            <optgroup label="Região Centro-Oeste">
+                <option value="GO">Goiás</option>
+                <option value="MT">Mato Grosso</option>
+            </optgroup>
+            
+            <optgroup label="Região Nordeste">
+                <option value="PE">Pernambuco</option>
+                <option value="RN">Rio Grande do Norte</option>
+            </optgroup>
+            
+            <optgroup label="Região Norte">
+                <option value="AC">Acre</option>
+                <option value="TO">Tocantins</option>
+            </optgroup>
+
+            <optgroup label="Região Sudeste">
+                <option value="MG">Minas Gerais</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="SP">São Paulo</option>
+            </optgroup>
+            
+            <optgroup label="Região Sul">
+                <option value="PR">Paraná</option>
+                <option value="RS">Rio Grande do Sul</option>
+            </optgroup>            
+            <option value="." selected>Selecione</option>
+        </select>
+    <br>
+    <br>
+        <label>Navegador Favorito:</label>
+        <input list="listNavegadores">
+        <datalist id="listNavegadores">
+            <option value="Brave">Brave</option>
+            <option value="Gloogle Chrome">Gloogle Chrome</option>
+            <option value="Konqueror">Konqueror</option>
+            <option value="Linux">Linux</option>
+            <option value="Microsoft Internet Explorer">Microsoft Internet Explorer</option>
+            <option value="Mozilla Firefox">Mozilla Firefox</option>
+            <option value="Opera GX">Opera GX</option>
+            <option value="Safari">Safari</option>
+        </datalist>
+    <br>
+    <br>
+        <label>Data de nascimento:</label>
+        <input type="date" name="dtNasc" id="dtNasc" min="1950-10-06" max="2024-10-29">
+    <br>
+        <label>Data de nascimento2:</label>
+        <input type="datetime-local" name="dtNasc2" id="dtNasc2" min="1950-10-06" max="2024-10-29 00:00">
+    <br>
+    <br>
+        <label>Envie seu arquivo</label>
+        <input type="file" name="arquivo" id="arquivo" accept="image/*">
+    <br>
+        <input type="hidden" name="txtID" id="txtID" value="359834">
+    <br>
+    <br>
+        <input type="submit">
+</form>
+    
+</body>
+</html>

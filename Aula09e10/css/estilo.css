@@ -1,0 +1,8 @@
+label{
+    background-color: rgb(95, 184, 224);
+    display: inline-table;
+}
+
+.sexo1,.interesse{
+    text-align: left;
+}
