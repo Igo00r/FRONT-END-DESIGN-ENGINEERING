@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function Mascara(formato,compo){
+            objeto = eval (campo)
+            sep1 = ".";
+            sep2 = "-";
+            sep3 = "(";
+            sep4 = ")";
+            
+            if(formato == "cpf"){
+                if(objeto.value.lenght == 3){
+                    objeto.value += sep1
+                }
+                else if(objeto.value.lenght == 7){
+                    objeto.value += sep1
+                }
+                else if(objeto.value.length == 11){
+                    objeto.value += sep2
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <label for="cpf">CPF:* </label>
+        <input type="text" name="cpf" id="cpf" onkeypress="Mascara('cpf',this)" maxlength="14">
+    <br>
+        <label for="cep">CEP:* </label>
+        <input type="text" name="cep" id="cep">
+    <br>
+        <label for="tel">TEL:* </label>
+        <input type="text" name="tel" id="tel">
+    <br>
+
+
+
+
+
+
+    </form>
+</body>
+</html>

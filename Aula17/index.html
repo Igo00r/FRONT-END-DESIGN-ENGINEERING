@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloco Rastejante</title>
+    <style>
+        #container{
+            width: 910px;
+            height: 910px;
+            background-color: black;
+            position: relative;
+        }
+        #quadro{
+            width: 50px;
+            height: 50px;
+            background-color: white;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        function Mover(){
+            var quadro = document.getElementById("quadro");
+            var pos = 0;
+            var posX = 0;
+            var posY = 0;
+            var diagonal = 
+            direcao = 'direita'
+            tempo = setInterval(Animacao,1)
+
+// setInterval(param1,param2);
+// param1 = aquilo que desejamos executar
+// param2 = o tempo em milissegundos
+            
+
+            function Animacao(){
+                if (direcao === "direita") {
+                    posX++;
+                    quadro.style.left = posX + "px";
+                    if (posX == 860) {
+                        direcao = "baixo";
+                    }
+                } else if (direcao  == "baixo") {
+                    posY++;
+                    quadro.style.top = posY + "px";
+                    if (posY == 860) {
+                        direcao = "esquerda";
+                    }
+                } else if (direcao == "esquerda") {
+                    posX--;
+                    quadro.style.left = posX + "px";
+                    if (posX == 0) {
+                        direcao = "cima";
+                    }
+                } else if (direcao == "cima") {
+                    posY--;
+                    quadro.style.top = posY + "px";
+                    if (posY == 0) {
+                        direcao = "direita";
+                }
+            }
+        }
+    }
+    </script>
+    <button type="button" onclick="Mover()">click</button>
+    <div id="container">
+        <div id="quadro"></div>
+    </div>
+</body>
+</html>
